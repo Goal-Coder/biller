@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bill.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="whole-page">
+        <div class="flex-box">
+            <div ><input type="text" class="inpt1" placeholder="Food Name"></div>
+            <div><input type="text" style="width: 100px;height: 3vh;" class="inpt2" placeholder="Qty"></div>
+            <div><input type="text" style="width: 100px;height: 3vh;"  class="inpt3" placeholder="Rate"></div>
+            <div><button class="btn" onclick="notes()">Add</button></div>
+            <div><button class="btn">Print</button></div>
+            <div><button class="btn" onclick="location.reload()">Refresh</button></div>
+        </div>
+        
+        <div class="table-flex">
+            <div class="s-no">
+                <div class="head">S.No</div>  
+            </div>
+            <div class="name">
+                <div class="head">Name</div>
+            </div>
+            <div class="qty">
+                <div class="head">Quantity</div>
+            </div>
+            <div class="rate">
+                <div class="head">Rate</div>
+            </div>
+            
+        </div>
+    </div>
+        
+    
+    <script src="bill.js"></script>
+   
+</body>
+</html>

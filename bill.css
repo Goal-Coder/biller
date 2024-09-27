@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: rgb(110, 107, 107)
+}
+
+.flex-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.inpt1{
+    width: 30vw;
+    height: 3vh;
+}
+
+.btn{
+    color: rgb(216, 211, 211);
+    margin-top: 1px;
+    width: 80px;
+    height: 34px;
+    border: none;
+    background-color: rgb(114, 0, 0);
+}
+
+.table-flex{
+    color: rgb(216, 211, 211);
+    margin-top: 40px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    border: 1px solid  rgb(216, 211, 211);
+    
+}
+
+.head{
+    height: 30px;
+    padding-left:5px ;
+    padding-top: 8px;
+    border: 1px solid  rgb(216, 211, 211); 
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.head1{
+    height: 30px;
+    padding-left:5px ;
+    padding-top: 8px;
+    border: 1px solid  rgb(216, 211, 211); 
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
