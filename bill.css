@@ -5,7 +5,7 @@ body{
     background-color: rgb(110, 107, 107)
 }
 
-.flex-box{
+.flex-top{
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -16,6 +16,7 @@ body{
 .inpt1{
     width: 30vw;
     height: 3vh;
+    text-transform: capitalize;
 }
 
 .btn{
