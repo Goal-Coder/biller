@@ -1,26 +1,25 @@
+"use strict";
 var count = 1;
-
-function foodList(){
-    
-    var input1 = document.querySelector(".inpt1").value;
-    var input2 = document.querySelector(".inpt2").value;
-    var input3 = document.querySelector(".inpt3").value*input2;
-    var sNo= document.querySelector(".s-no");
-    var name= document.querySelector(".name");
-    var qty= document.querySelector(".qty");
-    var rate= document.querySelector(".rate");
-
-    function addItems(divides,inppt){
-        var divi = document.createElement("div");
-        divi.innerHTML=inppt;
-        divides.append(divi);
-        divi.className="head1";    
+function foodList() {
+    let input1 = document.querySelector(".inpt1");
+    var input2 = document.querySelector(".inpt2");
+    var input3 = document.querySelector(".inpt3");
+    var topClass = document.querySelector(".table-flex");
+    let food = {
+        foodNum: count++,
+        foodName: input1.value,
+        foodQuantity: parseInt(input2.value),
+        foodRate: parseInt(input3.value)
+    };
+    function index(a) {
+        let item = document.createElement("div");
+        item.innerHTML = a;
+        topClass.append(item);
+        item.className = "head";
     }
-
-  
-    addItems(sNo,count);
-    addItems(name,input1);
-    addItems(qty,input2);
-    addItems(rate,input3);
-    count++;
+    index(food.foodNum);
+    index(food.foodName);
+    index(food.foodQuantity);
+    index(food.foodRate * food.foodQuantity);
+    reset();
 }
